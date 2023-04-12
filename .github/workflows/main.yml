@@ -70,6 +70,6 @@ jobs:
           script: |
             # Выполняет pull образа с DockerHub
             sudo docker pull maxim1629/gates
-            #остановка всех контейнеров
+            # остановка всех контейнеров
             sudo docker stop $(sudo docker ps -a -q)
             sudo docker run --rm -d -p 5000:5000 maxim1629/gates
